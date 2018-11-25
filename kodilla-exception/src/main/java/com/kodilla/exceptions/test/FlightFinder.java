@@ -13,21 +13,16 @@ public class FlightFinder {
         this.airportsMap.put("Katowice", true);
         this.airportsMap.put("Paris", true);
         this.airportsMap.put("San Francisco", true);
-        this.airportsMap.put("Berlin", true);
+        this.airportsMap.put("Berlin", false);
         this.airportsMap.put("Baku", true);
         this.airportsMap.put("Tokyo", true);
     }
 
     public boolean findFlight(Flight flight) throws RouteNotFoundException {
         String arrivalAirport = flight.getArrivalAirport();
-        String departureAirport = flight.getDepartureAirport();
 
         if (this.airportsMap.containsKey(arrivalAirport)) {
-            if (this.airportsMap.containsKey(departureAirport)) {
-                return true;
-            } else {
-                throw new RouteNotFoundException("The " + departureAirport + " airport is not supported by our Company");
-            }
+            return this.airportsMap.get(arrivalAirport);
         } else {
             throw new RouteNotFoundException("The " + arrivalAirport + " airport is not supported by our Company");
         }
