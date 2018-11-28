@@ -26,12 +26,14 @@ public class MovieStore {
         booksTitlesWithTranslations.put("AV", avengersTranslations);
         booksTitlesWithTranslations.put("FL", flashTranslations);
 
-        booksTitlesWithTranslations.entrySet().stream()
+        return booksTitlesWithTranslations;
+    }
+
+    public static void main(String[] args) {
+        new MovieStore().getMovies().entrySet().stream()
                 .flatMap(title -> title.getValue().stream())
                 .map(title -> title + "! ")
                 .forEach(System.out::print);
-
-        return booksTitlesWithTranslations;
     }
 }
 
