@@ -12,8 +12,8 @@ public class SupplierFarmer implements SupplierRegister {
         thingsAvialable.put("Potato", 10);
         thingsAvialable.put("Onion", 2);
         thingsAvialable.put("Pepper", 8);
-
     }
+
     @Override
     public boolean isItemAvailable(String itemName) {
         return this.thingsAvialable.containsKey(itemName);
