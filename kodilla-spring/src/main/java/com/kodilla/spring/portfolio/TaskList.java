@@ -15,6 +15,6 @@ public class TaskList {
     }
 
     public ArrayList<String> getTasks() {
-        return new ArrayList<String>(tasks);
+        return new ArrayList<>(tasks);
     }
 }

@@ -4,13 +4,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class BoardConfig {
 
     @Autowired
     @Qualifier("taskListToDo")
-    TaskList taskList;
+    TaskList taskListToDo;
+
+    @Autowired
+    @Qualifier("taskListInProgress")
+    TaskList taskListInProgress;
+
+    @Autowired
+    @Qualifier("taskListDone")
+    TaskList taskListDone;
 
     @Bean(name = "taskListToDo")
     public TaskList taskListToDo() {
@@ -29,6 +38,6 @@ public class BoardConfig {
 
     @Bean
     public Board getBoard() {
-        return new Board(taskListToDo(), taskListInProgress(), taskListDone());
+        return new Board(taskListToDo, taskListInProgress, taskListDone);
     }
 }
