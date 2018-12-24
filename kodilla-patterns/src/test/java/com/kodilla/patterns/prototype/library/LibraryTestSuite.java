@@ -11,7 +11,7 @@ public class LibraryTestSuite {
     @Test
     public void testGetBooks() {
         //Given
-        Library library = new Library("Library nr 1");
+        Library library = new Library("Library");
 
         IntStream.iterate(1, n -> n + 1)
                 .limit(10)
@@ -19,7 +19,7 @@ public class LibraryTestSuite {
 
         Library shallowCopyLibrary = null;
         try {
-            shallowCopyLibrary = library.shallowCopy();
+            shallowCopyLibrary = library.shallowCopy() ;
             shallowCopyLibrary.setName("Shallow copy Library");
         } catch (CloneNotSupportedException e) {
             System.out.println(e);
@@ -37,6 +37,10 @@ public class LibraryTestSuite {
         shallowCopyLibrary.getBooks().add(new Book("Mistrz i Małgorzata", "M.Bułhakow", LocalDate.of(1989, 01,06)));
 
         //Then
+        System.out.println(library.toString());
+        System.out.println(shallowCopyLibrary.toString());
+        System.out.println(deepCopyLibrary.toString());
+
         Assert.assertEquals(11, library.getBooks().size());
         Assert.assertEquals(11, shallowCopyLibrary.getBooks().size());
         Assert.assertEquals(10, deepCopyLibrary.getBooks().size());

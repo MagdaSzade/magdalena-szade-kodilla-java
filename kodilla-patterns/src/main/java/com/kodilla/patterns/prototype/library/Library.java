@@ -5,6 +5,7 @@ import com.kodilla.patterns.prototype.Prototype;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public final class Library extends Prototype {
      private String name;
@@ -41,5 +42,13 @@ public final class Library extends Prototype {
             clonedLibrary.getBooks().add(clonedBook);
         }
         return clonedLibrary;
+    }
+
+    @Override
+    public String toString() {
+        String allLibraryBooks = this.getBooks().stream()
+                .map(Book::toString)
+                .collect(Collectors.joining("\n", this.getName() + "\n", "."));
+    return allLibraryBooks;
     }
 }
