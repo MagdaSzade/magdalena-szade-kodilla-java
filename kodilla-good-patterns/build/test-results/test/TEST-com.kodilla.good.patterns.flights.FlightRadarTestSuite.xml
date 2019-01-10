@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.good.patterns.flights.FlightRadarTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-12-07T21:27:24" hostname="SZADE-LENOVO" time="0.052">
+<testsuite name="com.kodilla.good.patterns.flights.FlightRadarTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-01-10T10:25:15" hostname="DESKTOP-QC09PJC" time="0.009">
   <properties/>
-  <testcase name="testIsStopoverAvailableTrue" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.047"/>
-  <testcase name="testIsStopoverAvailableNonExistingAirport" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.001"/>
-  <testcase name="testAllFlightsToAirport" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.002"/>
+  <testcase name="testIsStopoverAvailableTrue" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.006"/>
+  <testcase name="testIsStopoverAvailableNonExistingAirport" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.0"/>
+  <testcase name="testAllFlightsToAirport" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.001"/>
   <testcase name="testAllFlightsFromAirportNonExisting" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.0"/>
   <testcase name="testIsStopoverAvailableFalse" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.0"/>
-  <testcase name="testAllFlightsToAirportNonExisting" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.0"/>
+  <testcase name="testAllFlightsToAirportNonExisting" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.001"/>
   <testcase name="testAllFlightsFromAirport" classname="com.kodilla.good.patterns.flights.FlightRadarTestSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
