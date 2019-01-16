@@ -4,6 +4,7 @@ package com.kodilla.hibernate.invoice.dao;
 import com.kodilla.hibernate.invoice.Invoice;
 import com.kodilla.hibernate.invoice.Item;
 import com.kodilla.hibernate.invoice.Product;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,8 +67,15 @@ public class InvoiceDaoTestSuit {
         invoiceDao.save(invoice1);
         invoiceDao.save(invoice2);
 
+        int invoiceId1 = invoice1.getInvoiceId();
+        int invoiceId2 = invoice2.getInvoiceId();
+
+        System.out.println(invoiceId1);
+        System.out.println(invoiceId2);
+
         //Then
-        //do nothing
+        Assert.assertNotEquals(0, invoiceId1);
+        Assert.assertNotEquals(0, invoiceId2);
 
     }
 }
