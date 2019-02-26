@@ -3,7 +3,7 @@ package com.kodilla.exceptions.test;
 public class FirstChallenge {
 
     public double divide(double a, double b) throws ArithmeticException {
-        if(b == 0){
+        if (b == 0) {
             throw new ArithmeticException();
         }
         return a / b;
@@ -11,6 +11,7 @@ public class FirstChallenge {
 
     /**
      * This main can throw an ArithmeticException!!!
+     *
      * @param args
      */
 
@@ -26,7 +27,6 @@ public class FirstChallenge {
         } finally {
             System.out.println("Thats all what I can do for You!");
         }
-
 
 
     }

@@ -21,8 +21,8 @@ public class TaskListDaoTestSuite {
     private TaskListDao taskListDao;
     @Autowired
     private TaskDao taskDao;
-    private static final String  LISTNAME = "List Name";
-    private static final String  DESCRIPTION = "Description";
+    private static final String LISTNAME = "List Name";
+    private static final String DESCRIPTION = "Description";
 
     @Test
     public void testFindByListName() {
@@ -110,7 +110,7 @@ public class TaskListDaoTestSuite {
             Assert.assertEquals(1, longTasks.size());
             Assert.assertEquals(3, shortTasks.size());
             Assert.assertEquals(3, enoughTimeTasks.size());
-            Assert.assertEquals(2,durationLongerThanTasks.size());
+            Assert.assertEquals(2, durationLongerThanTasks.size());
         } finally {
             //CleanUp
             taskListDao.delete(id);

@@ -23,7 +23,7 @@ public class Bigmac {
 
         public BigmacBuilder bun(String bun) {
             if (options.getAvailableBuns().contains(bun))
-            this.bun = bun;
+                this.bun = bun;
             return this;
         }
 

@@ -43,6 +43,7 @@ public class CalculateStatistics {
             this.averageNumberOfCommentsPerPost = 0;
         }
     }
+
     public void showStatistic() {
         System.out.println("Statystyki naszego forum:");
         System.out.println("Liczba użytkowników: " + this.numberOfUsers);

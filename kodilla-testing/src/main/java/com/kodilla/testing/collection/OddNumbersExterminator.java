@@ -8,7 +8,7 @@ public class OddNumbersExterminator {
         ArrayList<Integer> evenNumbers = new ArrayList<>();
 
         for (Integer number : numbers) {
-            if (number%2 == 0) {
+            if (number % 2 == 0) {
                 evenNumbers.add(number);
             }
         }

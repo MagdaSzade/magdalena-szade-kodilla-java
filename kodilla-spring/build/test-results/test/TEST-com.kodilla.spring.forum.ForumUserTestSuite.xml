@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.spring.forum.ForumUserTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-10T10:25:30" hostname="DESKTOP-QC09PJC" time="0.016">
+<testsuite name="com.kodilla.spring.forum.ForumUserTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-21T11:52:19" hostname="DESKTOP-QC09PJC" time="0.017">
   <properties/>
-  <testcase name="testGetName" classname="com.kodilla.spring.forum.ForumUserTestSuite" time="0.016"/>
-  <system-out><![CDATA[2019-01-10 11:25:30.469  INFO 1284 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@27b42ba3: startup date [Thu Jan 10 11:25:30 CET 2019]; root of context hierarchy
+  <testcase name="testGetName" classname="com.kodilla.spring.forum.ForumUserTestSuite" time="0.017"/>
+  <system-out><![CDATA[2019-02-21 12:52:19.052  INFO 2000 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@a1ffaa9: startup date [Thu Feb 21 12:52:19 CET 2019]; root of context hierarchy
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -5,12 +5,20 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedNativeQuery(
-        name = "Company.companyWhichNamesStartedWith",
-        query = "SELECT * FROM COMPANIES " +
-                "WHERE LEFT(COMPANY_NAME,3) LIKE :BEG",
-        resultClass = Company.class
-)
+@NamedNativeQueries({
+        @NamedNativeQuery(
+                name = "Company.findCompanyWithSpecifiedLettersInName",
+                query = "SELECT * FROM COMPANIES WHERE COMPANY_NAME LIKE CONCAT('%', :ARG, '%')",
+                resultClass = Company.class
+        ),
+        @NamedNativeQuery(
+                name = "Company.companyWhichNamesStartedWith",
+                query = "SELECT * FROM COMPANIES " +
+                        "WHERE LEFT(COMPANY_NAME,3) LIKE :BEG",
+                resultClass = Company.class
+        )
+})
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
@@ -47,6 +55,7 @@ public class Company {
     private void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
+
     private void setId(int id) {
         this.id = id;
     }

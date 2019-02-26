@@ -19,7 +19,7 @@ public class LibraryTestSuite {
 
         Library shallowCopyLibrary = null;
         try {
-            shallowCopyLibrary = library.shallowCopy() ;
+            shallowCopyLibrary = library.shallowCopy();
             shallowCopyLibrary.setName("Shallow copy Library");
         } catch (CloneNotSupportedException e) {
             System.out.println(e);
@@ -34,7 +34,7 @@ public class LibraryTestSuite {
         }
 
         //When
-        shallowCopyLibrary.getBooks().add(new Book("Mistrz i Małgorzata", "M.Bułhakow", LocalDate.of(1989, 01,06)));
+        shallowCopyLibrary.getBooks().add(new Book("Mistrz i Małgorzata", "M.Bułhakow", LocalDate.of(1989, 01, 06)));
 
         //Then
         System.out.println(library.toString());

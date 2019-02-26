@@ -7,7 +7,7 @@ public class ExceptionHandling {
 
         try {
             secondChallenge.probablyIWillThrowException(0, 0);
-        } catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Given number is out of range");
         } finally {
             System.out.println("That's all.");

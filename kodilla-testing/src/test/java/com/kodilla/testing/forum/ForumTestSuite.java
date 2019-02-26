@@ -28,7 +28,7 @@ public class ForumTestSuite {
     @Test
     public void testCaseUsername() {
         //Given
-        SimpleUser simpleUser = new SimpleUser ("theForumUser", "John Smith");
+        SimpleUser simpleUser = new SimpleUser("theForumUser", "John Smith");
         //When
         String result = simpleUser.getUsername();
         //Then
@@ -38,7 +38,7 @@ public class ForumTestSuite {
     @Test
     public void testCaseRealName() {
         //Given
-        SimpleUser simpleUser = new SimpleUser ("theForumUser", "John Smith");
+        SimpleUser simpleUser = new SimpleUser("theForumUser", "John Smith");
         //When
         String result = simpleUser.getRealName();
         //Then

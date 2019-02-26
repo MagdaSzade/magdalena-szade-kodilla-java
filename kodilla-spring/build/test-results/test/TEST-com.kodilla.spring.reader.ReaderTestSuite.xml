@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.spring.reader.ReaderTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-10T10:25:31" hostname="DESKTOP-QC09PJC" time="0.04">
+<testsuite name="com.kodilla.spring.reader.ReaderTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-02-21T11:52:19" hostname="DESKTOP-QC09PJC" time="0.038">
   <properties/>
   <testcase name="testRead" classname="com.kodilla.spring.reader.ReaderTestSuite" time="0.021"/>
-  <testcase name="testConditional" classname="com.kodilla.spring.reader.ReaderTestSuite" time="0.019"/>
-  <system-out><![CDATA[2019-01-10 11:25:31.000  INFO 1284 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@65efabf5: startup date [Thu Jan 10 11:25:31 CET 2019]; root of context hierarchy
+  <testcase name="testConditional" classname="com.kodilla.spring.reader.ReaderTestSuite" time="0.016"/>
+  <system-out><![CDATA[2019-02-21 12:52:19.679  INFO 2000 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e9c7425: startup date [Thu Feb 21 12:52:19 CET 2019]; root of context hierarchy
 Reading: The book number one
-2019-01-10 11:25:31.015  INFO 1284 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7204deb2: startup date [Thu Jan 10 11:25:31 CET 2019]; root of context hierarchy
-Bean book2 was found in the container: false
+2019-02-21 12:52:19.694  INFO 2000 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c629b3d: startup date [Thu Feb 21 12:52:19 CET 2019]; root of context hierarchy
+Bean book2 was found in the container: true
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

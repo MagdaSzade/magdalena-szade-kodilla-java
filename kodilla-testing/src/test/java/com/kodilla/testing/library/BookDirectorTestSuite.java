@@ -95,7 +95,8 @@ public class BookDirectorTestSuite {
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         LibraryUser user = new LibraryUser("John", "Smith", "73051411537");
-        List<Book> resultListOf0Books = new ArrayList<Book>();;
+        List<Book> resultListOf0Books = new ArrayList<Book>();
+        ;
         when(libraryDatabaseMock.listBooksInHandsOf(user))
                 .thenReturn(resultListOf0Books);
         ArrayList<Book> expectedResult = new ArrayList<>();

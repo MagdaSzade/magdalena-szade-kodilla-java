@@ -14,7 +14,7 @@ public class Circle implements Shape {
         return this.name;
     }
 
-    public double getField(){
-        return this.radius*this.radius*Math.PI;
+    public double getField() {
+        return this.radius * this.radius * Math.PI;
     }
 }

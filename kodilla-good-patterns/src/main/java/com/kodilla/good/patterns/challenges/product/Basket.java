@@ -8,7 +8,7 @@ public class Basket {
     HashMap<String, Integer> basket = new HashMap<>();
 
     public void addItem(String itemName, int amount) {
-        basket.put(itemName,amount);
+        basket.put(itemName, amount);
     }
 
     public HashMap<String, Integer> getBasket() {

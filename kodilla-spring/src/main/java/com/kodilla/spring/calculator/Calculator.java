@@ -10,25 +10,25 @@ public class Calculator {
     Display display;
 
     public double add(double a, double b) {
-        double c = a+b;
+        double c = a + b;
         display.displayValue(c);
         return c;
     }
 
     public double sub(double a, double b) {
-        double c = a-b;
+        double c = a - b;
         display.displayValue(c);
         return c;
     }
 
     public double mul(double a, double b) {
-        double c = a*b;
+        double c = a * b;
         display.displayValue(c);
         return c;
     }
 
     public double div(double a, double b) {
-        double c = a/b;
+        double c = a / b;
         display.displayValue(c);
         return c;
     }

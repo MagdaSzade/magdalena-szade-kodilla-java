@@ -18,7 +18,8 @@ public class FlightExceptionRunner {
             System.out.println(flightFinder.findFlight(flight2));
         } catch (RouteNotFoundException e) {
             System.out.println(e);
-        }        try {
+        }
+        try {
             System.out.println(flightFinder.findFlight(flight3));
         } catch (RouteNotFoundException e) {
             System.out.println(e);

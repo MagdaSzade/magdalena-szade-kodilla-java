@@ -15,7 +15,7 @@ public class Square implements Shape {
         return this.name;
     }
 
-    public double getField(){
-        return this.side*this.side;
+    public double getField() {
+        return this.side * this.side;
     }
 }

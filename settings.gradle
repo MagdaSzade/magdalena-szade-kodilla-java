@@ -8,6 +8,6 @@ include 'kodilla-spring-intro'
 include 'kodilla-spring'
 include 'kodilla-spring-proba'
 include 'kodilla-patterns'
+include 'kodilla-patterns2'
 include 'kodilla-jdbc'
 include 'kodilla-hibernate'
-

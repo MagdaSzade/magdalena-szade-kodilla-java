@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.strategy.social.UserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-10T10:25:25" hostname="DESKTOP-QC09PJC" time="0.001">
+<testsuite name="com.kodilla.patterns.strategy.social.UserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-02-21T11:52:10" hostname="DESKTOP-QC09PJC" time="0.002">
   <properties/>
-  <testcase name="testDefaultSharingStrategies" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.001"/>
+  <testcase name="testDefaultSharingStrategies" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.002"/>
   <testcase name="testIndividualSharingStrategy" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.0"/>
   <system-out><![CDATA[DomyĹ›lne social media to: Facebook
 ZmieniĹ‚eĹ› ustawienia na: Snapchat

@@ -2,6 +2,7 @@ package com.kodilla.stream.portfolio;
 
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -160,10 +161,10 @@ public class BoardTestSuite {
                 .flatMap(t1 -> t1.getTasks().stream())
                 .map(t -> 1)
                 .reduce(Integer::sum).orElse(1);
-        long result = daysFormBegining/howManyTasks;
+        long result = daysFormBegining / howManyTasks;
 
         //Then
-        Assert.assertEquals(resultExpected,result);
+        Assert.assertEquals(resultExpected, result);
     }
 
     @Test
@@ -181,9 +182,9 @@ public class BoardTestSuite {
                 .mapToLong(d -> DAYS.between(d, LocalDate.now()))
                 .average().orElse(0);
         //Then
-        Assert.assertEquals(resultExpected,average,0.001);
+        Assert.assertEquals(resultExpected, average, 0.001);
 
     }
 
 
-    }
+}

@@ -15,7 +15,7 @@ public class FileReaderWithoutHandling {
         String pathString = file.getPath().replace("%20", " ");
 
         Stream<String> fileLines = Files.lines(Paths.get(pathString));
-            fileLines.forEach(System.out::println);
+        fileLines.forEach(System.out::println);
 
     }
 }

@@ -21,7 +21,7 @@ public class Product {
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name = "PRODUCT_ID")
+    @Column(name = "PRODUCT_ID", unique = true)
     public int getProductId() {
         return this.productId;
     }
@@ -31,7 +31,7 @@ public class Product {
         return this.name;
     }
 
-    @OneToMany (
+    @OneToMany(
             targetEntity = Item.class,
             mappedBy = "product",
             cascade = CascadeType.ALL,

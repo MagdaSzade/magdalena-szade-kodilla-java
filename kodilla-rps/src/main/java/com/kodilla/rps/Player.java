@@ -15,6 +15,7 @@ public class Player {
     public void addWin() {
         this.winCounter += 1;
     }
+
     public String getName() {
         return this.name;
     }

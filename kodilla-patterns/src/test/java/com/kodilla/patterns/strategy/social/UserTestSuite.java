@@ -18,9 +18,9 @@ public class UserTestSuite {
         String zgenPublisher = milan.getSocialPublisher().share();
 
         //Then
-        Assert.assertEquals("Facebook",millenialsPublisher);
-        Assert.assertEquals("Twitter",ygenPublisher);
-        Assert.assertEquals("Snapchat",zgenPublisher);
+        Assert.assertEquals("Facebook", millenialsPublisher);
+        Assert.assertEquals("Twitter", ygenPublisher);
+        Assert.assertEquals("Snapchat", zgenPublisher);
     }
 
     @Test

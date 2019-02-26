@@ -27,18 +27,18 @@ public class Item {
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name = "ITEM_ID")
+    @Column(name = "ITEM_ID", unique = true)
     public int getItemId() {
         return this.itemId;
     }
 
-   @ManyToOne
-   @JoinColumn(name = "PRODUCT")
-   public Product getProduct() {
+    @ManyToOne
+    @JoinColumn(name = "PRODUCT")
+    public Product getProduct() {
         return this.product;
     }
 
-   @Column(name = "PRICE")
+    @Column(name = "PRICE")
     public BigDecimal getPrice() {
         return this.price;
     }
@@ -59,11 +59,11 @@ public class Item {
         return this.invoice;
     }
 
-    private void setItemId(int itemId){
-       this.itemId = itemId;
+    private void setItemId(int itemId) {
+        this.itemId = itemId;
     }
 
-    private void setProduct(Product product){
+    private void setProduct(Product product) {
         this.product = product;
     }
 

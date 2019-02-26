@@ -7,10 +7,10 @@ public class PaintingTask implements Task {
     private boolean isDone;
 
     public PaintingTask(String taskName, String color, String whatToPaint) {
-    this.taskName = taskName;
-    this.color = color;
-    this.whatToPaint = whatToPaint;
-    this.isDone = false;
+        this.taskName = taskName;
+        this.color = color;
+        this.whatToPaint = whatToPaint;
+        this.isDone = false;
     }
 
     @Override

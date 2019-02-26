@@ -15,7 +15,7 @@ public class Triangle implements Shape {
         return this.name;
     }
 
-    public double getField(){
-        return this.side*this.side*Math.sqrt(3)/4;
+    public double getField() {
+        return this.side * this.side * Math.sqrt(3) / 4;
     }
 }

@@ -1,6 +1,7 @@
 package com.kodilla.testing.collection;
 
 import com.kodilla.testing.collection.OddNumbersExterminator;
+
 import java.util.ArrayList;
 
 import org.junit.After;
@@ -21,6 +22,7 @@ public class CollectionTestSuite {
     public void after() {
         System.out.println("Test number " + counter + ": END");
     }
+
     @Test
     public void testOddNumberExterminatorEmptyList() {
         //Given

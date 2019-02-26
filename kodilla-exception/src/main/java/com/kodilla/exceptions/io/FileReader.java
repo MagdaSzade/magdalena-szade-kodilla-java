@@ -15,7 +15,7 @@ public class FileReader {
         File file = new File(classLoader.getResource("file/names.txt").getFile());
         String pathString = file.getPath().replace("%20", " ");
 
-        try (Stream<String> fileLines = Files.lines(Paths.get(pathString))){
+        try (Stream<String> fileLines = Files.lines(Paths.get(pathString))) {
             fileLines.forEach(System.out::println);
         } catch (IOException e) {
             throw new FileReaderException();

@@ -8,14 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="TASKLIST")
+@Table(name = "TASKLIST")
 public class TaskList {
     private int id;
     private String listName;
     private String description;
     private List<Task> tasks = new ArrayList<>();
 
-    public TaskList(){
+    public TaskList() {
     }
 
     public TaskList(String listName, String description) {
@@ -41,7 +41,7 @@ public class TaskList {
         return this.description;
     }
 
-    @OneToMany (
+    @OneToMany(
             targetEntity = Task.class,
             mappedBy = "taskList",
             cascade = CascadeType.ALL,

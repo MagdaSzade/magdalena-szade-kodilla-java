@@ -4,6 +4,7 @@ import org.junit.*;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 
 public class CalculateStatisticTestSuite {
@@ -30,7 +31,7 @@ public class CalculateStatisticTestSuite {
         //numbers of post = 0;
         //Given
         CalculateStatistics calculate = new CalculateStatistics();
-        CalculateStatistics calculateCompared = new CalculateStatistics(5, 0,0,0,0,0);
+        CalculateStatistics calculateCompared = new CalculateStatistics(5, 0, 0, 0, 0, 0);
         Statistics statisticMock = mock(Statistics.class);
         ArrayList<String> userList = new ArrayList<>();
         userList.add("Adam");
@@ -54,7 +55,7 @@ public class CalculateStatisticTestSuite {
         //numbers of post = 1000 and comments = 0;
         //Given
         CalculateStatistics calculate = new CalculateStatistics();
-        CalculateStatistics calculateCompared = new CalculateStatistics(5, 1000,0,200,0,0);
+        CalculateStatistics calculateCompared = new CalculateStatistics(5, 1000, 0, 200, 0, 0);
         Statistics statisticMock = mock(Statistics.class);
         ArrayList<String> userList = new ArrayList<>();
         userList.add("Adam");
@@ -78,7 +79,7 @@ public class CalculateStatisticTestSuite {
         //numbers of post < numbers of posts;
         //Given
         CalculateStatistics calculate = new CalculateStatistics();
-        CalculateStatistics calculateCompared = new CalculateStatistics(5, 1000,200,200,40,0.2);
+        CalculateStatistics calculateCompared = new CalculateStatistics(5, 1000, 200, 200, 40, 0.2);
         Statistics statisticMock = mock(Statistics.class);
         ArrayList<String> userList = new ArrayList<>();
         userList.add("Adam");
@@ -102,7 +103,7 @@ public class CalculateStatisticTestSuite {
         //numbers of post > numbers of posts;
         //Given
         CalculateStatistics calculate = new CalculateStatistics();
-        CalculateStatistics calculateCompared = new CalculateStatistics(5, 200,1000,40,200,5);
+        CalculateStatistics calculateCompared = new CalculateStatistics(5, 200, 1000, 40, 200, 5);
         Statistics statisticMock = mock(Statistics.class);
         ArrayList<String> userList = new ArrayList<>();
         userList.add("Adam");
@@ -126,7 +127,7 @@ public class CalculateStatisticTestSuite {
         //number of users = 0;
         //Given
         CalculateStatistics calculate = new CalculateStatistics();
-        CalculateStatistics calculateCompared = new CalculateStatistics(0, 200,1000,0,0,5);
+        CalculateStatistics calculateCompared = new CalculateStatistics(0, 200, 1000, 0, 0, 5);
         Statistics statisticMock = mock(Statistics.class);
         ArrayList<String> userList = new ArrayList<>();
         int numberOfPosts = 200;
@@ -145,7 +146,7 @@ public class CalculateStatisticTestSuite {
         //numbers of users = 100;
         //Given
         CalculateStatistics calculate = new CalculateStatistics();
-        CalculateStatistics calculateCompared = new CalculateStatistics(100, 200,1000,2,10,5);
+        CalculateStatistics calculateCompared = new CalculateStatistics(100, 200, 1000, 2, 10, 5);
         Statistics statisticMock = mock(Statistics.class);
         ArrayList<String> userList = new ArrayList<>();
         for (int i = 0; i < 100; i++) {

@@ -8,8 +8,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public final class Library extends Prototype {
-     private String name;
-     private Set<Book> books = new HashSet<>();
+    private String name;
+    private Set<Book> books = new HashSet<>();
 
     public Library(final String name) {
         this.name = name;
@@ -32,9 +32,9 @@ public final class Library extends Prototype {
     }
 
     public Library deepCopy() throws CloneNotSupportedException {
-        Library clonedLibrary = (Library)super.clone();
+        Library clonedLibrary = (Library) super.clone();
         clonedLibrary.books = new HashSet<>();
-        for(Book book : books) {
+        for (Book book : books) {
             String clonedTitle = book.getTitle();
             String clonedAuthor = book.getAuthor();
             LocalDate clonedDate = book.getPublicationDate();
@@ -49,6 +49,6 @@ public final class Library extends Prototype {
         String allLibraryBooks = this.getBooks().stream()
                 .map(Book::toString)
                 .collect(Collectors.joining("\n", this.getName() + "\n", "."));
-    return allLibraryBooks;
+        return allLibraryBooks;
     }
 }

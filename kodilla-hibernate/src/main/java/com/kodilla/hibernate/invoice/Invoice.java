@@ -11,7 +11,7 @@ public class Invoice {
     private String number;
     private List<Item> items;
 
-    private Invoice(){
+    private Invoice() {
     }
 
     public Invoice(String number, List<Item> items) {
@@ -22,8 +22,8 @@ public class Invoice {
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name = "INVOICE_ID")
-    public int getInvoiceId(){
+    @Column(name = "INVOICE_ID", unique = true)
+    public int getInvoiceId() {
         return this.invoiceId;
     }
 
@@ -32,13 +32,13 @@ public class Invoice {
         return this.number;
     }
 
-    @OneToMany (
-        targetEntity = Item.class,
-        mappedBy = "invoice",
-        cascade = CascadeType.ALL,
+    @OneToMany(
+            targetEntity = Item.class,
+            mappedBy = "invoice",
+            cascade = CascadeType.ALL,
             fetch = FetchType.LAZY
     )
-        public List<Item> getItems() {
+    public List<Item> getItems() {
         return this.items;
     }
 

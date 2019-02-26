@@ -15,7 +15,7 @@ public class RpsRunner {
 
         System.out.println("Cześć! Będziemy grać w kamień, papier, nożyce! Podaj swoje imię.");
         human.setName(scanner.nextLine());
-        System.out.println("Witaj " + human.getName()+ "!");
+        System.out.println("Witaj " + human.getName() + "!");
         System.out.println("Podaj do ilu wygranych będzie się toczyła gra.");
         winAmountToEndGame = scanner.nextInt();
         System.out.println("Zasady gry są nastepujące:");
@@ -24,7 +24,7 @@ public class RpsRunner {
         System.out.println("Aby wybrać \"nożyce\" wciśnij \"3\".");
         System.out.println("Zaczynamy grę!");
 
-        while(!end) {
+        while (!end) {
             System.out.println("");
         }
 

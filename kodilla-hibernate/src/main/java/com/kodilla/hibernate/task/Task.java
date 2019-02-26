@@ -6,18 +6,18 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-@NamedQueries( {
-    @NamedQuery( name = "Task.retrieveLongTasks",
-            query = "FROM Task WHERE duration > 10"
-    ),
-    @NamedQuery(
-            name = "Task.retrieveShortTasks",
-            query = "FROM Task WHERE duration <= 10"
-    ),
-    @NamedQuery(
-            name = "Task.retrieveTaskWithDurationLongerThan",
-            query = "FROM Task WHERE duration > :DURATION"
-    )
+@NamedQueries({
+        @NamedQuery(name = "Task.retrieveLongTasks",
+                query = "FROM Task WHERE duration > 10"
+        ),
+        @NamedQuery(
+                name = "Task.retrieveShortTasks",
+                query = "FROM Task WHERE duration <= 10"
+        ),
+        @NamedQuery(
+                name = "Task.retrieveTaskWithDurationLongerThan",
+                query = "FROM Task WHERE duration > :DURATION"
+        )
 })
 
 @NamedNativeQuery(
@@ -60,12 +60,12 @@ public final class Task {
     }
 
     @NotNull
-    @Column(name="CREATED")
+    @Column(name = "CREATED")
     public Date getCreated() {
         return created;
     }
 
-    @Column(name="DURATION")
+    @Column(name = "DURATION")
     public int getDuration() {
         return duration;
     }
@@ -98,7 +98,7 @@ public final class Task {
         this.duration = duration;
     }
 
-    public void setTaskFinancialDetails (TaskFinancialDetails taskFinancialDetails) {
+    public void setTaskFinancialDetails(TaskFinancialDetails taskFinancialDetails) {
         this.taskFinancialDetails = taskFinancialDetails;
     }
 
